@@ -3,9 +3,13 @@ export function Footer() {
     <footer className="border-t border-border py-10">
       <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-4 px-6 sm:flex-row">
         <p className="text-sm text-muted-foreground">
-          © {new Date().getFullYear()} Your Name. Crafted with <span className="text-primary">♥</span> and lots of coffee.
+          © {new Date().getFullYear()} Safa Rahaf Khan. Crafted with{" "}
+          <span className="text-primary">Love</span>.
         </p>
-        <a href="#home" className="text-sm font-semibold text-foreground hover:text-primary transition-colors">
+        <a
+          href="#home"
+          className="text-sm font-semibold text-foreground hover:text-primary transition-colors"
+        >
           Back to top ↑
         </a>
       </div>

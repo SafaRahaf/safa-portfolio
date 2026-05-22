@@ -1,15 +1,23 @@
-import { Github, Linkedin, Mail, MapPin, Phone, Twitter, Send } from "lucide-react";
+import { Github, Linkedin, Mail, MapPin, Phone, Twitter, Send, Facebook } from "lucide-react";
+import { FaWhatsapp } from "react-icons/fa";
 
 const contacts = [
-  { icon: Mail, label: "Email", value: "hello@yourname.dev", href: "mailto:hello@yourname.dev" },
-  { icon: Phone, label: "Phone", value: "+1 (555) 123-4567", href: "tel:+15551234567" },
+  {
+    icon: Mail,
+    label: "Email",
+    value: "safarahafkha@gmail.com",
+    href: "mailto:safarahafkha@gmail.com",
+  },
+  { icon: FaWhatsapp, label: "WhatsApp", value: "+880 1339939437", href: "tel:+8801339939437" },
+  { icon: Phone, label: "Phone", value: "+880 19320018361", href: "tel:+88019320018361" },
   { icon: MapPin, label: "Location", value: "Remote · Worldwide", href: "#" },
 ];
 
 const socials = [
-  { icon: Github, label: "GitHub", href: "#" },
-  { icon: Linkedin, label: "LinkedIn", href: "#" },
-  { icon: Twitter, label: "Twitter", href: "#" },
+  { icon: Github, label: "GitHub", href: "https://github.com/SafaRahaf/" },
+  { icon: Linkedin, label: "LinkedIn", href: "https://www.linkedin.com/in/safa-rahaf-2096b226a/" },
+  { icon: Twitter, label: "Twitter", href: "https://x.com/safarahaf9922" },
+  { icon: Facebook, label: "Facebook", href: "https://www.facebook.com/safa.rahaf.9922" },
 ];
 
 export function Contact() {
@@ -17,7 +25,9 @@ export function Contact() {
     <section id="contact" className="relative py-24 sm:py-32">
       <div className="mx-auto max-w-6xl px-6">
         <div className="reveal mb-16 text-center">
-          <span className="text-sm font-semibold uppercase tracking-[0.2em] text-primary">Contact</span>
+          <span className="text-sm font-semibold uppercase tracking-[0.2em] text-primary">
+            Contact
+          </span>
           <h2 className="mt-3 font-display text-4xl font-bold sm:text-6xl">
             Let's build <span className="text-primary">something great</span>.
           </h2>
@@ -38,7 +48,9 @@ export function Contact() {
                   <c.icon size={20} />
                 </div>
                 <div>
-                  <div className="text-xs uppercase tracking-wider text-muted-foreground">{c.label}</div>
+                  <div className="text-xs uppercase tracking-wider text-muted-foreground">
+                    {c.label}
+                  </div>
                   <div className="font-semibold">{c.value}</div>
                 </div>
               </a>
@@ -84,7 +96,10 @@ export function Contact() {
               className="btn-press group inline-flex w-full items-center justify-center gap-2 rounded-xl bg-primary px-6 py-3.5 text-sm font-semibold text-primary-foreground shadow-lg shadow-primary/30 hover:shadow-primary/50 transition-shadow sm:w-auto"
             >
               Send Message
-              <Send size={16} className="transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" />
+              <Send
+                size={16}
+                className="transition-transform group-hover:translate-x-1 group-hover:-translate-y-1"
+              />
             </button>
           </form>
         </div>
@@ -93,7 +108,10 @@ export function Contact() {
   );
 }
 
-function Field({ label, ...rest }: { label: string } & React.InputHTMLAttributes<HTMLInputElement>) {
+function Field({
+  label,
+  ...rest
+}: { label: string } & React.InputHTMLAttributes<HTMLInputElement>) {
   return (
     <div>
       <label className="mb-1.5 block text-xs font-semibold uppercase tracking-wider text-muted-foreground">

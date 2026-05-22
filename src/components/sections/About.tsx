@@ -12,16 +12,18 @@ export function About() {
     <section id="about" className="relative py-24 sm:py-32">
       <div className="mx-auto max-w-7xl px-6">
         <div className="reveal mb-16 max-w-3xl">
-          <span className="text-sm font-semibold uppercase tracking-[0.2em] text-primary">About</span>
+          <span className="text-sm font-semibold uppercase tracking-[0.2em] text-primary">
+            About
+          </span>
           <h2 className="mt-3 font-display text-4xl font-bold sm:text-5xl">
             Building the web with <span className="text-primary">craft & care</span>.
           </h2>
           <p className="mt-6 text-lg leading-relaxed text-muted-foreground">
-            I'm a fullstack developer with 5+ years of experience building production-grade web
-            applications. I specialize in the React/Next.js ecosystem on the frontend and Node.js
-            on the backend. I love turning complex problems into simple, beautiful, intuitive
-            products — and I care deeply about performance, accessibility, and the small details
-            that make great software feel great.
+            I'm a fullstack developer with 3+ years of professional experience building
+            production-grade web applications. I specialize in the React/Next.js ecosystem on the
+            frontend and Node.js on the backend. I love turning complex problems into simple,
+            beautiful, intuitive products — and I care deeply about performance, accessibility,
+            security, and the small details that makes software feel great.
           </p>
         </div>
 

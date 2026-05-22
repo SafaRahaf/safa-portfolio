@@ -1,19 +1,19 @@
 const groups = [
   {
     title: "Frontend",
-    items: ["React JS", "Next JS", "TypeScript", "Redux", "TanStack Query"],
+    items: ["React JS", "Next JS", "Redux", "TypeScript"],
   },
   {
     title: "Styling",
-    items: ["Tailwind CSS", "Bootstrap", "Inline CSS", "SASS", "Framer Motion"],
+    items: ["Tailwind CSS", "Bootstrap", "Inline CSS", "Framer Motion"],
   },
   {
     title: "Backend",
-    items: ["Node JS", "Nest JS", "Express", "REST APIs", "GraphQL"],
+    items: ["Node JS", "Nest JS", "Express", "REST APIs"],
   },
   {
     title: "Databases",
-    items: ["MongoDB", "MySQL", "PostgreSQL", "Redis", "Prisma"],
+    items: ["MongoDB", "MySQL", "PostgreSQL"],
   },
 ];
 
@@ -22,7 +22,9 @@ export function Skills() {
     <section id="skills" className="relative py-24 sm:py-32 bg-muted/30">
       <div className="mx-auto max-w-7xl px-6">
         <div className="reveal mb-16 text-center">
-          <span className="text-sm font-semibold uppercase tracking-[0.2em] text-primary">Skills</span>
+          <span className="text-sm font-semibold uppercase tracking-[0.2em] text-primary">
+            Skills
+          </span>
           <h2 className="mt-3 font-display text-4xl font-bold sm:text-5xl">My Tech Stack</h2>
           <p className="mt-4 text-muted-foreground">Tools I reach for to ship great products.</p>
         </div>
@@ -60,13 +62,25 @@ export function Skills() {
           <div className="flex w-max gap-12 animate-marquee whitespace-nowrap">
             {[...Array(2)].map((_, dup) => (
               <div key={dup} className="flex gap-12 pr-12">
-                {["React", "Next.js", "Node.js", "Nest.js", "TypeScript", "MongoDB", "PostgreSQL", "MySQL", "Tailwind", "GraphQL"].map(
-                  (t) => (
-                    <span key={t + dup} className="font-display text-2xl font-bold text-muted-foreground/60 hover:text-primary transition-colors">
-                      {t} <span className="text-primary">•</span>
-                    </span>
-                  ),
-                )}
+                {[
+                  "React",
+                  "Next.js",
+                  "Node.js",
+                  "Nest.js",
+                  "TypeScript",
+                  "MongoDB",
+                  "PostgreSQL",
+                  "MySQL",
+                  "Tailwind",
+                  "GraphQL",
+                ].map((t) => (
+                  <span
+                    key={t + dup}
+                    className="font-display text-2xl font-bold text-muted-foreground/60 hover:text-primary transition-colors"
+                  >
+                    {t} <span className="text-primary">•</span>
+                  </span>
+                ))}
               </div>
             ))}
           </div>

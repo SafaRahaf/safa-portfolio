@@ -4,7 +4,7 @@ const themes: { value: Theme; label: string; swatch: string }[] = [
   { value: "black", label: "Black", swatch: "#0a0a0a" },
   { value: "white", label: "White", swatch: "#ffffff" },
   { value: "ash", label: "Ash", swatch: "#4a4d55" },
-  { value: "yellow", label: "Yellow", swatch: "#facc15" },
+  // { value: "yellow", label: "Yellow", swatch: "#facc15" },
 ];
 
 export function ThemeSwitcher() {
