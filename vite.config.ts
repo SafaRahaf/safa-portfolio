@@ -13,7 +13,8 @@ export default defineConfig({
   tanstackStart: {
     plugins: [react()],
     server: {
-      allowedHosts: ["safa-portfolio.onrender.com"],
+      // allowedHosts: ["safa-portfolio.onrender.com"],
+      allowedHosts: ["https://safa-portfolio.onrender.com/", "safa-portfolio.onrender.com"],
     },
   },
 });
