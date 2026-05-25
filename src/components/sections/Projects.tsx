@@ -12,6 +12,7 @@ const projects = [
     tags: ["Next.js", "Node.js", "PostgreSQL", "Tailwind"],
     image: p1,
     href: "https://console.gearmade.com.bd/",
+    githubLink: "https://github.com/clapable/admin-ui",
   },
   {
     title: "Modern E-commerce",
@@ -19,6 +20,7 @@ const projects = [
     tags: ["React", "Node.js", "MongoDB", "Bootstrap"],
     image: p2,
     href: "https://gearmade.com.bd/",
+    githubLink: "https://github.com/clapable/customer-ui",
   },
   {
     title: "Educational org management system",
@@ -26,6 +28,7 @@ const projects = [
     tags: ["Next.js", "Nest.js", "MySQL", "Tailwind"],
     image: p3,
     href: "https://admin.uat.muallim.icu/",
+    githubLink: "https://github.com/muallimproject/muallim-frontend-orgadmin",
   },
   {
     title: "Email broadcast system",
@@ -33,6 +36,7 @@ const projects = [
     tags: ["Next.js", "Tailwind", "PostgreSQL"],
     image: p4,
     href: "https://email-broadcast.ebas-svc.online/",
+    githubLink: "https://github.com/SafaRahaf/email-blaster",
   },
   {
     title: "B2B SaaS Platform",
@@ -40,6 +44,7 @@ const projects = [
     tags: ["React", "TypeScript", "OpenAI", "Tailwind"],
     image: p5,
     href: "#",
+    githubLink: "https://github.com/cropee/admin-ui",
   },
 ];
 
@@ -86,7 +91,7 @@ export function Projects() {
                     <ArrowUpRight size={18} />
                   </a>
                   <a
-                    href={p.href}
+                    href={p.githubLink}
                     className="btn-press flex h-10 w-10 items-center justify-center rounded-full bg-background text-foreground border border-border hover:scale-110 transition-transform"
                   >
                     <Github size={18} />

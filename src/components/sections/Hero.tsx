@@ -1,5 +1,5 @@
 import { ArrowDown, Download, Sparkles } from "lucide-react";
-import portrait from "@/assets/hero.png";
+import portrait from "@/assets/hero.jpeg";
 
 export function Hero() {
   return (
