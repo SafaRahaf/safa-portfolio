@@ -27,7 +27,7 @@ const projects = [
     desc: "School management system covering attendance tracking, student and teacher management, class scheduling, parent portal, employee management, and role-based reporting dashboards.",
     tags: ["Next.js", "Nest.js", "MySQL", "Tailwind"],
     image: p3,
-    href: "https://admin.uat.muallim.icu/",
+    href: "https://admin.dev-us.muallimedu.com/",
     githubLink: "https://github.com/muallimproject/muallim-frontend-orgadmin",
   },
   {
@@ -43,7 +43,7 @@ const projects = [
     desc: "B2B system connecting distributors and retailers, enabling product and offer management, quantity-based pricing optimization, and order tracking with role-based dashboards.",
     tags: ["React", "TypeScript", "OpenAI", "Tailwind"],
     image: p5,
-    href: "#",
+    href: "https://demo.cropee.net/",
     githubLink: "https://github.com/cropee/admin-ui",
   },
 ];
